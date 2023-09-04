@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="gsap.js"></script>
+	<script src="scrolltrigger.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			width: 100%;
+			overflow-x: hidden;
+		}
+		main{
+			width: 100%;
+			height: 100vh;
+			scroll-behavior: smooth;
+		}
+		section{
+			width: 100%;
+			height: 100vh;
+			scroll-snap-align: start;
+		}
+		section{
+			background-color: #171717;
+		}
+		@font-face{
+			src: url('a1.ttf');
+			font-family: a1;
+		}
+		
+		h2{
+			color: white;
+			font-family: a1;
+			font-size: 2.3vw;
+		}
+		a{
+			text-decoration: none;
+			color: whitesmoke;
+			font-weight: bold;
+			font-size: clamp(12px, 1vw, 10vw);
+			padding-top: 2vw;
+			transition: 1.5s;
+		}
+		a:hover{
+			color: red;
+			transition: 1.2s;
+		}
+		p{
+			color: white;
+		}
+		#head:hover{
+			text-shadow: 0px 3px 10px lightpink;
+			transition: 1s;
+		}
+
+	</style>
+</head>
+<body>	
+
+ 	<section id="sec1">
+ 		<nav style="width:100%;display:flex ;justify-content: space-around;padding-top: 2vw;"   id="h1">
+			<h2 id="head">Steakhouse</h2>
+			<div style="width:48%;display: flex;justify-content: space-between;">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Events</a>
+			<a href="">Contact</a>
+			<a href="">Reservations</a>
+			</div>	
+		</nav>
+		<div style="width:100%;height:100vh;position: relative;"  id="h1">
+			<h1 style="color: white;font-size: 5vw;margin-top: 18vh;margin-left: 10vw;padding-bottom: 10vh;">A Premium<br>And Authentic<br>Steakhouse.</h1>
+			<a href="" style="border: 0.1vw solid white;padding: 0.9vw;margin-left: 16vw;justify-content: space-around;">Book A Table</a>
+		<div>	
+		<img src="leaf.png" id="leaf" style="position: absolute;bottom: 0;top:-10vh;left:43.7%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 10vw;min-width:250px;">	
+		<img src="leaf2.png" id="leaf2" style="position: absolute;bottom: 0;top:45vh;right:17%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:200px ;">	
+		<img src="pan.png" id="pan" style="position: absolute;bottom: 0;top: -6vh;left:49%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 33vw;min-width:400px;">	
+		<img src="spoon.png" id="spoon" style="position: absolute;bottom: 0;top: -6vh;right:11%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:120px ;">	
+		<img src="pan2.png" id="pan2" style="position: absolute;bottom: 0;top: -6vh;left:49.3%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:150px ;">	
+		<img src="pan3.png" id="pan3" style="position: absolute;bottom: 0;top: 19vh;left:46%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:140px ;">	
+		<img src="pan4.png" id="pan4" style="position: absolute;bottom: 0;top: -12vh;right:31%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:120px;">	
+		<img src="fruit.png" id="fruit" style="position: absolute;bottom: 0;top: 49.5vh;left:47%;filter: drop-shadow(10px 10px 10px rgba(0,0,0,.4));width: 7vw;min-width:120px ;">
+ 		</div>
+ 		</div>
+
+ 	</section>
+ 	<section id="sec2" style="z-index: 5;">
+ 		<div style="display: flex;padding: 7vw;" id="h2">
+ 			
+ 			<div>
+ 				<img src="fam.jpg" style="width:40vw;position: relative;z-index: 3;">
+ 			</div>
+ 			<div style="background-color: white;padding: 2vw;padding-bottom: 4vw; position: relative;z-index: 2;">
+ 				<h2 style="color:black;"  id="pa2">Discover</h2>
+ 				<h1 style="font-size: 3vw;padding: 1vw;">Our Story</h1>
+ 				<p style="display:grid;place-items: center;color: black;justify-content: space-between;padding: 1vw;font-size: 17px;">Get the best steakhouse experience at the steakhouse.Whenther yoy're juiting us for a romatic,a business testeing.A privite party .Now only can you get the bet wealt,you can guther up was your old memories whise enjoying the book we provide.It's a Delicious Breakfast Food in Morning Time.A Very taste food.And Morning Frashness in Face.It's a Delicious Breakfast Food in Morning Time.A Very taste food.And Morning Frashness in Face.</p>
+ 				<img src="lea.png" style="position:absolute;width: 18vw;right:-7vw;bottom: 20.5vh;z-index: 1;" id="lea">
+ 			</div>
+
+ 		</div>
+		
+ 	</section>
+ 	<section id="sec3">
+ 		<div style="width:100%;display: flex;" id="h3">
+ 			<div style="width:37%;margin-left:28%;">
+ 				<h2>Discover</h2>
+ 				<h1 style="color:white;font-size: 2.5vw;">Our Menu</h1>
+ 			</div>
+ 			<div style="width:63%;margin-left: -16%;padding-left: 2vw; " id="dis">
+ 				<p style="color:white;width:83%;">“Food is symbolic of love when words are inadequate.” “My weaknesses have always been food and men – in that order.” “I watch cooking change the cook, just as it transforms the food.” “I know once people get connected to real food, they never change back.The secret ingredient is always cheese.Don't go bacon my heart.I like people who love to eat. They're the best kind of people in the world.I'm on a seafood diet. I see food, I eat it”</p>
+ 			</div>
+ 		</div>
+ 		<div style="width:100%;">
+ 			<div style="position:relative;width: 50%;">
+ 				<img src="back1.png" style="width:33vw;margin-left: 34.5%;top: 10vh;position: absolute;" id="ba">
+ 				<img src="leaff.png" style="width:20vw;margin-left: 36.5%;top: 28vh;position: absolute;" id="ba">
+ 				<img src="s1.png" id="s1" style="width:28vw;margin-left: 38%;position: absolute;">
+ 			</div>
+ 			<div style="width:50%;margin-left: 35vw;padding: 8.8vw;display: grid;place-items: center;">
+ 				<h2 style="padding-bottom: 3vh;">Strawberry</h2>
+ 				<p style="color:white;" id="p1">It's a Delicious Breakfast Food in Morning Time.A Very taste food.<br>And Morning Frashness in Face.</p>
+ 			</div>
+ 		</div>
+ 		<div style="position:relative;">
+ 			<img src="print.png" style="width:26vw;position: absolute;margin-left: 42vw;margin-top: -7vw;">
+ 		</div>
+ 		<div style="width:100%;display: flex;">
+ 			<div style="width:50%;padding: 15vw;display: grid;place-items: center;position: relative;">
+ 				<h2 style="">Main Dish</h2>
+ 				<p style="color:white;" id="pa">It's a Delicious Breakfast Food in Morning Time.A Very taste food.<br>And Morning Frashness in Face.</p>
+ 			</div>
+ 			<div style="width: 50%;position: relative;">
+ 				<img src="back1.png" style="width:39vw;margin-left: 7.5%;top: 6vh;position: absolute;" id="b">
+ 				<img src="s4.png" style="width:30vw;margin-right: 17vw;position: absolute;" id="s4">
+ 			</div>
+ 		</div>
+ 		<div style="position:relative;">
+ 			<img src="print2.png" style="width:26vw;position: absolute;margin-left: 39vw;margin-top: -11vw;">
+ 		</div>
+ 		<div style="width:100%;">
+ 			<div style="position:relative;width: 50%;">
+ 				<img src="back1.png" style="width:39vw;margin-left: 7.5%;top: -1vh;position: absolute;" id="b1">
+ 				<img src="s2.png" style="width:27vw;margin-left: 27%;position: absolute;" id="s2">
+ 			</div>
+ 			<div style="width:50%;margin-left: 35vw;padding: 5.8vw;display: grid;place-items: center;">
+ 				<h2 style="padding-bottom: 3vh;">Side Dish</h2>
+ 				<p style="color:white;" id="p2">It's a Delicious Breakfast Food in Morning Time.A Very taste food.<br>And Morning Frashness in Face.</p>
+ 			</div>
+ 		</div>
+ 		<div style="position:relative;">
+ 			<img src="print3.png" style="width:27vw;position: absolute;margin-left: 38vw;margin-top: -4vw;">
+ 		</div>
+ 		<div style="width:100%;display: flex;">
+ 			<div style="width:50%;padding: 15vw;display: grid;place-items: center;position: relative;">
+ 				<h2 style="padding-bottom: 2vh;">Dessort</h2>
+ 				<p style="color:white;" id="p3">It's a Delicious Breakfast Food in Morning Time.A Very taste food.<br>And Morning Frashness in Face.</p>
+ 			</div>
+ 			<div style="width: 50%;position: relative;">
+ 				<img src="back1.png" style="width:39vw;margin-left: 0%;top: -5vh;position: absolute;" id="b2">
+ 				<img src="s3.png" style="width:25vw;margin-right: 17vw;margin-top: 5vh;position: absolute;" id="s3">
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section></section>
+ 	<section></section>
+ 	<section id="sec5">
+ 		<div style="display: flex;padding: 7vw;position: relative;" id="s5">
+ 			<div >
+ 				<img src="events.jpg" style="width:40vw;position: relative;">
+ 			</div>
+ 			<div style="background-color: white;padding: 4.5vw;padding-bottom: 4vw;">
+ 				<h2 style="color:black;">Discover</h2>
+ 				<h1 style="font-size: 3vw;padding: 1vw;">Upcoming Events</h1>
+ 				<p id="pa3" style="display:grid;place-items: center;color: black;padding: 1vw;">Now only can you get the bet wealt,you can guther up was your old memories whise enjoying the book we provide.It's a Delicious Breakfast Food in Morning Time.A Very taste food.And Morning Frashness in Face.It's a Delicious Breakfast Food in Morning Time.A Very taste food.And Morning Frashness in Face.</p>
+ 				<img src="leaf2.png" style="position:absolute;width: 18vw;right:3vw;bottom: 9vh;" id="lea3">
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section id="sec4">
+ 		<div style="width:100%;height: 100vh;">
+ 			<div style="height: 70vh;position: relative;justify-content: space-around;">
+ 				<img id="end" src="table1.jpg" style="width:93%;height: 66vh;padding: 3vw;opacity: 0.8;transform: translateY(60px);">
+ 			</div>
+ 			<div style="height: 30vh;">
+ 				<nav style="width:100%;display:flex ;justify-content: space-around;padding-top: 2.5vw;">
+				<div style="width:48%;display: flex;justify-content: space-between;padding: 2vw;">
+					<p>Location:<br><br>
+					start with our fresh<br>sliced shrmp and<br>1/223 Noosevent,NY.</p>
+					<p style="margin-top: 2.5vw;">start with our fresh<br>sliced shrmp <br>1/223 Noosevent,NY.</p>
+					<p>Contact :<br><br>
+						+91 0432-876 978<br>
+						+91 9876543210<br>
+						+91 9786756453
+				</div>
+				<div style="padding: 2.5vw;">
+					<h2 id="head">Steakhouse</h2>
+					<a href="" style="padding: 2vw;">info@gmail.Com</a>
+				</div>	
+				</nav>
+ 			</div>
+ 		</div>
+ 	</section>
+
+<script>
+	gsap.registerPlugin('ScrollTrigger')
+
+	
+
+	gsap.to('#pan',{
+		y:-250,
+		duration:5,
+		scrollTrigger:{
+			trigger:'#pan4',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#pan1',{
+		y:-250,
+		rotate:90,
+		duration:5,
+		scrollTrigger:{
+			trigger:'#pan1',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#pan2',{
+		y:-250,
+		rotate:90,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#pan2',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#pan3',{
+		y:-250,
+		rotate:90,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#spoon',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#pan4',{
+		y:-250,
+		rotate:90,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#pan4',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#leaf',{
+		y:-280,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#spoon',
+			start:'top 20%',
+			end:'bottom 15%',
+			scrub:1,
+			}
+		})
+	gsap.to('#leaf2',{
+		y:-250,
+		duration:5,
+		scrollTrigger:{
+			trigger:'#pan3',
+			start:'top 35%',
+			end:'bottom 15%',
+			scrub:1,
+			}
+		})
+	gsap.to('#fruit',{
+		y:-250,
+		duration:5,
+		scrollTrigger:{
+			trigger:'#pan3',
+			start:'top 35%',
+			end:'bottom 15%',
+			scrub:1,
+			}
+		})
+	gsap.to('#spoon',{
+		y:-250,
+		x:550,
+		rotate:180,
+		duration:1,
+		scrollTrigger:{
+			trigger:'#pan2',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#s1',{
+		rotate:70,
+		duration:4,
+		scrollTrigger:{
+			trigger:'#dis',
+			start:'top 10%',
+			end:'bottom 4%',
+			scrub:2,
+			}
+		})
+
+	gsap.to('#ba',{
+		y:-50,
+		duration:3,
+		scrollTrigger:{
+			trigger:'#sec3',
+			start:'top -10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#b',{
+		y:-50,
+		duration:3,
+		scrollTrigger:{
+			trigger:'#pa',
+			start:'top -10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#s4',{
+		rotate:70,
+		duration:4,
+		scrollTrigger:{
+			trigger:'#b',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#b1',{
+		y:-50,
+		duration:3,
+		scrollTrigger:{
+			trigger:'#p2',
+			start:'top -10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#s2',{
+		rotate:70,
+		duration:4,
+		scrollTrigger:{
+			trigger:'#b1',
+			start:'top 10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#b3',{
+		y:-50,
+		duration:3,
+		scrollTrigger:{
+			trigger:'#p3',
+			start:'top -10%',
+			end:'bottom 10%',
+			scrub:1,
+			}
+		})
+	gsap.to('#s3',{
+		rotate:70,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#p3',
+			start:'top 40%',
+			end:'bottom 5%',
+			scrub:1,
+			}
+		})
+	gsap.to('#lea',{
+		y:250,
+		x:-250,
+		rotate:360,
+		duration:2,
+		scrollTrigger:{
+			trigger:'#pa2',
+			start:'top 23%',
+			end:'bottom -40%',
+			scrub:2,
+			}
+		})
+		gsap.to('#end',{
+			y:-400,
+			scrollTrigger:{
+				trigger:'#sec4',
+				start:'top 5%',
+				end:'bottom 5%',
+				scrub:2,
+
+			}
+		})
+		gsap.to('#lea3',{
+			y:-300,
+			rotate:-50,
+			scrollTrigger:{
+				trigger:'#sec5',
+				start:'top 30%',
+				end:'bottom 80%',
+				scrub:2,
+
+			}
+		})
+		gsap.to('#s5',{
+			y:-300,
+			scrollTrigger:{
+				trigger:'#s5',
+				start:'top 30%',
+				end:'bottom 80%',
+				scrub:2,
+
+			}
+		})
+		gsap.to('#h1',{
+			y:-400,
+			duration:4,
+			scrollTrigger:{
+				trigger:'#sec1',
+				start:'top -25%',
+				end:'bottom -5%',
+				scrub:1,
+
+			}
+		})
+		gsap.to('#h2',{
+			y:-100,
+			duration:4,
+			scrollTrigger:{
+				trigger:'#sec2',
+				start:'top -25%',
+				end:'bottom -5%',
+				scrub:1,
+
+			}
+		})
+</script>
+</body>
+</html>
